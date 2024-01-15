@@ -15,7 +15,7 @@ const app = express()
 
 // mendefinisikan port berjalannya server
 // port adalah sebuah jalur yang dibuat agar code itu berjalan
-const port= 3000
+const port= 3001
 
 /**allow to read json as request */
 app.use(express.json())

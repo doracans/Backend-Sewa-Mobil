@@ -5,12 +5,13 @@ const volumeTabung = (request: Request, response: Response) => {
         const phi = Math.PI
         const r: number = Number(request.body.r)
         const t: number = Number(request.body.t)
-        const luas = phi*r*r*t
+        const volume = phi*r*r*t
         return response.status(200)
         .json({
             status: true,
              r,
-             luas
+             t,
+             volume
         })
     } catch (error) {
         return response.status(500)
@@ -26,12 +27,12 @@ const LPTabung = (request: Request, response: Response) => {
         const phi = Math.PI
         const r: number = Number(request.body.r)
         const t: number = Number(request.body.t)
-        const volume = 2*phi*r*(r+t)
+        const lp = 2*phi*r*(r+t)
         return response.status(200)
         .json({
             status: true,
              r,
-             volume
+            lp
         })
     } catch (error) {
         return response.status(500)
@@ -166,6 +167,7 @@ const LPKerucut = (request: Request, response: Response) => {
              phi,
              r,
              t,
+             s,
             volume
         })
     } catch (error) {
