@@ -1,3 +1,4 @@
 # file ini digunakan untuk mendefinisikan nama folder atau nama file yang tidak ikut diupload di github
 node_modules/
 dist/
+.env
